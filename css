@@ -1,0 +1,118 @@
+/* Ukuran logo */
+
+.logo-img {
+    height: 50px;
+    /* atur tinggi logo, misalnya 50px */
+    width: auto;
+    /* biar proporsional */
+    margin-right: 12px;
+}
+
+
+/* Atur posisi teks & logo sejajar */
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brand h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.brand h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+header {
+    background: linear-gradient(90deg, #0b7bd6, #499ed3);
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+    background: #fff;
+    padding: 4px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+a.btn {
+    background: #ffffff;
+    color: #0b7bd6;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+a.btn:hover {
+    background: #f0f0f0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 80px auto 40px;
+    /* ⬅️ margin atas diperbesar jadi 80px */
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 20px;
+}
+
+.fasilitas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.fasilitas-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.fasilitas-card i {
+    font-size: 36px;
+    color: #255e6e;
+    margin-bottom: 12px;
+}
+
+.fasilitas-card h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fasilitas-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}

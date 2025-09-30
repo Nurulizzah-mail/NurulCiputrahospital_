@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fasilitas & Layanan – Ciputra Hospital</title>
+    <meta name="description" content="Fasilitas & layanan yang tersedia di Ciputra Hospital" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+         :root {
+            --accent: hsl(193, 56%, 34%);
+            --bg: #f6f8fb;
+            --card: #ffffff;
+            --muted: #6b7280;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, Roboto, "Segoe UI", Arial;
+            background: var(--bg);
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(90deg, var(--accent), hsl(193, 56%, 34%));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        
+        header p {
+            margin-top: 8px;
+            color: #f0f0f0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .card-body {
+            padding: 16px;
+            flex: 1;
+        }
+        
+        .card-body h3 {
+            margin: 0 0 8px;
+            font-size: 20px;
+            color: var(--accent);
+        }
+        
+        .card-body p {
+            margin: 0;
+            font-size: 15px;
+            color: #555;
+        }
+        
+        .card a {
+            display: block;
+            padding: 12px;
+            text-align: center;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-top: 1px solid #eee;
+            transition: background 0.2s;
+        }
+        
+        .card a:hover {
+            background: hsl(193, 56%, 34%);
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin: 40px auto 0;
+            text-decoration: none;
+            background: var(--accent);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        
+        .back-btn:hover {
+            background: hsl(193, 56%, 34%);
+        }
+        
+        .back-container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Fasilitas & Layanan</h1>
+        <p>Temukan fasilitas dan layanan unggulan di Ciputra Hospital</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="wp.jpg" alt="Rawat Inap">
+                <div class="card-body">
+                    <h3>Rawat Inap</h3>
+                    <p>Kamar VVIP, VIP, ICU/ICCU, NICU/PICU, dan layanan perawatan intensif lainnya.</p>
+                </div>
+                <a href="https://ciputrahospital.com/fasilitas-layanan/" target="_blank">Lihat Detail</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="np.jpg" alt="Rawat Jalan">
+                <div class="card-body">
+                    <h3>Rawat Jalan</h3>
+                    <p>Layanan poliklinik, rehabilitasi medik, hemodialisa, dental clinic & lainnya.</p>
+                </div>
+                <a href="https://ciputrahospital.com/fasilitas-layanan/" target="_blank">Lihat Detail</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="mg.jpeg" alt="Medical Check Up">
+                <div class="card-body">
+                    <h3>Medical Check Up</h3>
+                    <p>Pemeriksaan kesehatan lengkap untuk pencegahan dini berbagai penyakit.</p>
+                </div>
+                <a href="https://ciputrahospital.com/fasilitas-layanan/" target="_blank">Lihat Detail</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="gd.jpg" alt="IGD 24 Jam">
+                <div class="card-body">
+                    <h3>IGD & Layanan 24 Jam</h3>
+                    <p>IGD, laboratorium, radiologi, apotek, dan ambulans siap 24 jam nonstop.</p>
+                </div>
+                <a href="https://ciputrahospital.com/fasilitas-layanan/" target="_blank">Lihat Detail</a>
+            </div>
+        </div>
+
+        <!-- Tombol kembali -->
+        <div class="back-container">
+            <a href="halutama.html" class="back-btn"><i class="fas fa-home"></i> Kembali ke Beranda</a>
+        </div>
+    </div>
+</body>
+
+</html>

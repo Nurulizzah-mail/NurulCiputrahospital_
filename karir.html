@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Karir - Ciputra Hospital</title>
+    <meta name="description" content="Lowongan kerja di Rumah Sakit Curug Sehat" />
+    <style>
+         :root {
+            --accent: hsl(193, 56%, 34%);
+            --bg: #f6f8fb;
+            --card: #ffffff;
+            --muted: #6b7280
+        }
+        
+        body {
+            font-family: Inter, system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+            margin: 0;
+            background: var(--bg);
+        }
+        /* HEADER */
+        
+        header {
+            background: linear-gradient(90deg, var(--accent), lch(49.59% 26.72 201.88));
+            color: white;
+            padding: 18px 24px;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+        
+        .brand {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 52px;
+            height: 52px;
+            border-radius: 8px;
+            background: #fff8;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        nav {
+            margin-left: auto;
+        }
+        
+        .navlinks {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            margin-left: auto;
+        }
+        
+        a.btn {
+            background: var(--card);
+            color: var(--accent);
+            padding: 8px 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: hwb(198 10% 57%);
+        }
+        /* HERO */
+        
+        .hero {
+            position: relative;
+            background: url('/bp.jpg') no-repeat center/cover;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.55);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hero-content {
+            color: white;
+            text-align: center;
+            z-index: 2;
+            max-width: 600px;
+            padding: 20px;
+        }
+        
+        .hero-content h1 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
+        
+        .hero-content p {
+            margin-bottom: 12px;
+            color: #f0f0f0;
+        }
+        /* CARD */
+        
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 6px 18px rgba(13, 38, 63, 0.06);
+            margin-top: 30px;
+        }
+        
+        .card h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        
+        .lowongan {
+            display: grid;
+            gap: 16px;
+            margin-top: 20px;
+        }
+        
+        .lowongan .card {
+            border-left: 5px solid var(--accent);
+        }
+        /* FOOTER */
+        
+        footer {
+            margin-top: 40px;
+            padding: 18px 0;
+            color: var(--muted);
+            text-align: center;
+            background: #f1f5f9;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container brand">
+            <div class="logo.png"></div>
+            <h2>Ciputra Hospital</h2>
+            <nav>
+                <div class="navlinks">
+                    <a href="halutama.html" class="btn">Beranda</a>
+                    <a href="karir.html" class="btn-primary">Karir</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <div class="hero-content container">
+                <h1>Karir di Ciputra Hospital</h1>
+                <p>Bergabunglah dengan tim profesional kami untuk memberikan pelayanan terbaik.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DAFTAR LOWONGAN -->
+    <section class="container">
+        <div class="card">
+            <h2>Lowongan Tersedia</h2>
+            <div class="lowongan">
+                <div class="card">
+                    <h3>Perawat</h3>
+                    <p>Melayani pasien rawat inap & rawat jalan. Minimal S1 Keperawatan, memiliki STR aktif.</p>
+                    <a href="mailto:hrd@rs-curugsehat.com" class="btn-primary">Lamar Sekarang</a>
+                </div>
+                <div class="card">
+                    <h3>Dokter Umum</h3>
+                    <p>Menangani pasien rawat jalan. Minimal Profesi Kedokteran, STR aktif.</p>
+                    <a href="mailto:hrd@rs-curugsehat.com" class="btn-primary">Lamar Sekarang</a>
+                </div>
+                <div class="card">
+                    <h3>Staff Administrasi</h3>
+                    <p>Mengurus dokumen dan administrasi pasien. Minima S1 Administrasi .</p>
+                    <a href="mailto:hrd@rs-curugsehat.com" class="btn-primary">Lamar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Ciputra Hospital. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+
+
+</section>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Dokter - Ciputra Hospital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+        
+        header {
+            background: hsl(193, 56%, 34%);
+            padding: 15px 30px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 25px;
+            font-size: 28px;
+            color: hsl(193, 56%, 34%);
+        }
+        
+        .search-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+        
+        input,
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            min-width: 200px;
+        }
+        
+        .button {
+            background: hsl(193, 56%, 34%);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .button:hover {
+            background: #095a9c;
+        }
+        
+        .back-btn {
+            background: #555;
+            margin-top: 20px;
+        }
+        
+        .back-btn:hover {
+            background: #333;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            background: #f0f0f0;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Ciputra Hospital</h2>
+    </header>
+
+    <div class="container">
+        <h1>Cari Dokter & Tenaga Kesehatan</h1>
+
+        <form action="https://dokter.ciputrahospital.com/" method="get" target="_blank">
+            <div class="search-box">
+                <input type="text" placeholder="Ketik nama dokter..." name="nama">
+                <select name="poli">
+          <option value="">Pilih Poliklinik</option>
+          <option value="gigi">Poliklinik Gigi</option>
+          <option value="anak">Poliklinik Anak</option>
+          <option value="penyakit-dalam">Poliklinik Penyakit Dalam</option>
+        </select>
+                <select name="lokasi">
+          <option value="">Lokasi Layanan</option>
+          <option value="ciputra-hospital-cibubur">Ciputra Hospital Cibubur</option>
+          <option value="ciputra-hospital-citra-raya">Ciputra Hospital Citra Raya</option>
+          <option value="ciputra-hospital-makassar">Ciputra Hospital Makassar</option>
+        </select>
+                <button type="submit" class="button">Cari Dokter</button>
+            </div>
+        </form>
+
+        <!-- Tombol kembali -->
+        <a href="halutama.html" class="button back-btn">⬅ Kembali ke Beranda</a>
+    </div>
+
+    <footer>
+        © 2025 Ciputra Hospital. Semua Hak Dilindungi.
+    </footer>
+
+</body>
+
+</html>

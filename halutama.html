@@ -1,0 +1,261 @@
+<!doctype html>
+<link rel="stylesheet" href="style.css">
+
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title> Ciputra Hospital</title>
+    <meta name="description" content="Website rumah sakit sederhana yang terhubung ke Ciputra Hospital" />
+
+    <!-- Font Awesome untuk icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+         :root {
+            --accent: hsl(177, 42%, 22%);
+            --card: #ffffff;
+            --muted: #6b7280
+        }
+        
+        body {
+            font-family: Inter, system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+            margin: 0;
+            background: url('bp.jpg') no-repeat center/cover fixed;
+        }
+        
+        header {
+            background: hsl(178, 35%, 28%);
+            color: white;
+            padding: 18px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .brand {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 16px;
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 20px;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 80px auto 40px;
+            /* ⬅️ margin atas diperbesar jadi 80px */
+            padding: 0 16px;
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 20px;
+        }
+        
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 6px 18px rgba(13, 38, 63, 0.12);
+        }
+        
+        .hero h1 {
+            margin: 0 0 12px;
+            font-size: 28px;
+        }
+        
+        .hero p {
+            margin: 0 0 18px;
+            color: var(--muted);
+        }
+        
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        a.btn {
+            background: #fff;
+            color: var(--accent);
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: 0.2s;
+        }
+        
+        a.btn:hover {
+            background: var(--accent);
+            color: #fff;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 16px;
+            color: var(--muted);
+            font-size: 14px;
+            background: hsl(193, 11%, 58%);
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header style="background:hsl(193, 9%, 57%); padding:10px; display:flex; align-items:center;">
+        <img src="logo.png" alt="Logo Ciputra Hospital" style="height:120px; width:auto; display:block;">
+        <div style="margin:0; padding:0; line-height:1; color:white; font-size:2rem;">Ciputra Hospital</div>
+    </header>
+
+
+    < <!-- Konten -->
+        <main class="container">
+            <!-- Hero -->
+            <div class="card hero">
+                <h1>Selamat datang di Ciputra Hopital</h1>
+                <p> Kami hadir untuk memberikan layanan kesehatan terbaik dengan penuh perhatian dan kenyamanan. Temukan informasi mengenai layanan medis, jadwal dokter, dan program kesehatan kami. Ciputra Hospital – Kesehatan Anda, Prioritas Kami.
+                    <div class="btn-group">
+                        <a href="https://ciputrahospital.com/" target="_blank" class="btn"><i class="fa-solid fa-globe"></i> Buka Situs Resmi</a>
+                        <a href="fasilitas.html" class="btn"><i class="fa-solid fa-hospital"></i> Fasilitas & Layanan</a>
+                        <a href="dokter.html" class="btn"><i class="fa-solid fa-notes-medical"></i> Cari Dokter</a>
+                        <!-- Tambahan -->
+                        <a href="karir.html" class="btn"><i class="fa-solid fa-briefcase"></i> Karir</a>
+                    </div>
+                    <!-- Section Artikel Ciputra Hospital Interaktif -->
+                    <section class="artikel-ciputra">
+                        <h2>Perbedaan Diare Akut dan Kronis</h2>
+
+                        <figure>
+                            <img src="pi.jpeg" alt="Perbedaan Diare Akut dan Kronis">
+                            <figcaption>Ilustrasi perbedaan diare akut dan kronis</figcaption>
+                        </figure>
+
+                        <p>
+                            Artikel ini membahas perbedaan antara diare akut dan kronis, termasuk penyebab, gejala, dan cara pengobatannya. Diare akut biasanya berlangsung singkat dan disebabkan oleh infeksi virus atau bakteri, sementara diare kronis berlangsung lebih dari empat
+                            minggu dan dapat disebabkan oleh kondisi medis serius seperti penyakit radang usus atau intoleransi makanan.
+                        </p>
+
+                        <a href="https://ciputrahospital.com/perbedaan-diare-akut-dan-diare-kronis/" target="_blank" class="btn-baca">Baca Selengkapnya</a>
+                    </section>
+
+                    <!-- CSS -->
+                    <style>
+                        .artikel-ciputra {
+                            max-width: 900px;
+                            margin: 40px auto;
+                            padding: 20px;
+                            background-color: #f9f9f9;
+                            border-radius: 10px;
+                            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                            font-family: Arial, sans-serif;
+                            opacity: 0;
+                            transform: translateY(30px);
+                            transition: all 0.8s ease;
+                        }
+                        
+                        .artikel-ciputra.visible {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                        
+                        .artikel-ciputra h2 {
+                            color: #0d6efd;
+                            margin-bottom: 15px;
+                        }
+                        
+                        .artikel-ciputra figure {
+                            margin: 0 0 15px 0;
+                        }
+                        
+                        .artikel-ciputra img {
+                            width: 100%;
+                            height: auto;
+                            border-radius: 8px;
+                        }
+                        
+                        .artikel-ciputra figcaption {
+                            font-size: 14px;
+                            color: #555;
+                            margin-top: 5px;
+                        }
+                        
+                        .artikel-ciputra p {
+                            font-size: 16px;
+                            line-height: 1.6;
+                            color: #333;
+                        }
+                        
+                        .btn-baca {
+                            display: inline-block;
+                            margin-top: 15px;
+                            padding: 10px 20px;
+                            background-color: #0d6efd;
+                            color: white;
+                            text-decoration: none;
+                            border-radius: 5px;
+                            transition: all 0.3s ease;
+                        }
+                        
+                        .btn-baca:hover {
+                            background-color: #084298;
+                            transform: translateY(-3px);
+                        }
+                    </style>
+
+                    <!-- JavaScript untuk efek fade-in saat scroll -->
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                            const artikel = document.querySelector(".artikel-ciputra");
+
+                            function fadeIn() {
+                                const top = artikel.getBoundingClientRect().top;
+                                const windowHeight = window.innerHeight;
+
+                                if (top < windowHeight - 50) {
+                                    artikel.classList.add("visible");
+                                }
+                            }
+
+                            window.addEventListener("scroll", fadeIn);
+                            fadeIn(); // Untuk langsung tampil jika sudah di layar
+                        });
+                    </script>
+
+            </div>
+
+            <!-- Kontak -->
+            <div class="card">
+                <h2>Kontak & Lokasi</h2>
+                <p><strong>Telepon:</strong><br> Telp: (021) 5940 5555 WA: 0780 3321 2250 IGD: (021) 5940 8911</p>
+                <p><strong>Alamat:</strong><br> Jl. Citra Raya Boulevard Blok V00 No.8, Cikupa, Panongan, Mekar Bakti, Panongan, Tangerang, Banten 15710. Klik Peta
+                </p>
+                <p><strong>Jam Operasional:</strong><br> 24 jam (UGD), 08:00 - 17:00 (Poliklinik)
+                </p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 Ciputra Hospital. Semua Hak Dilindungi.
+        </footer>
+</body>
+
+</html>
